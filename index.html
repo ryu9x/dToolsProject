@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+		</script>
+	</head>
+	<body>
+		<div id="duynv_toolbar">
+			<div class="container">
+				<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#collapse">Toolbar</button>
+				<div class="collapse in" id="collapse" aria-expanded="true" style="">
+					<div class="panel panel-default" id="panel-image">
+						<div class="panel-heading"><button id="reload" type="button" class="btn btn-default"><span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> Reload </button></div>
+						<div class="panel-body">
+							<ul  class="nav nav-pills">
+								<li class="active">
+									<a  href="#tab-data" data-toggle="tab">Data</a>
+								</li>
+								<li><a href="#tab-mapping" data-toggle="tab">Mapping</a>
+							</li>
+						</ul>
+						<div class="tab-content clearfix">
+							<div class="card-body tab-pane active" id="tab-data">
+								<!-- .form -->
+								
+								<!-- .fieldset -->
+								<fieldset>
+									<legend>Item infomation</legend>
+									<!-- .form-group -->
+									<div class="form-group">
+										<div class="col-xs-12"><label for="item-id">Item ID</label></div>
+										<div class="col-xs-10"><input class="form-control" id="item-id"></div>
+										<div class="col-xs-2"><button class="btn btn-info"  type="button" id="btn-item-id">Add</button></div>
+									</div>
+									<!-- /.form-group -->
+									<!-- .form-group -->
+									<div class="form-group">
+										<div class="col-xs-12"><label for="main-image">Main image</label></div>
+										<div class="col-xs-10"><div id="main-image"></div> </div></div>
+										<div class="col-xs-2"><button class="btn btn-info"  type="button" id="btn-main-image">Add</button></div>
+										<!-- /.form-group -->
+										<!-- .form-group -->
+										<div class="form-group">
+											<div class="col-xs-12"><label for="tf4">Description Image</label></div>
+											<div class="col-xs-10">
+											<div id="desc-image">
+												<a href="javascript:void(0);" target="_blank" download="image1.jpg">
+													<label for="input1"> 
+													<img src="https://ae01.alicdn.com/kf/HTB1ky1IRXXXXXc2XXXXq6xXFXXX7.jpg" width="50" height="50">
+													</label>
+													<input id="input1" type="checkbox" value="https://ae01.alicdn.com/kf/HTB1ky1IRXXXXXc2XXXXq6xXFXXX7.jpg">
+												</a>
+											</div>
+											</div>
+											<div class="col-xs-2"><button class="btn btn-info"  type="button" id="btn-desc-image">Add</button></div>
+											
+											
+										</div>
+										<!-- /.form-group -->
+										<!-- .form-group -->
+										<div class="form-group">
+											<div class="col-xs-12"><label for="tf5">Description text</label></div>
+											<div class="col-xs-10"><textarea id="desc-text" style="width: 100%;height: 100px;" onclick="this.select()"></textarea></div>
+											<div class="col-xs-2"><button class="btn btn-info"  type="button" id="btn-desc-text">Add</button></div>
+											
+											
+										</div>
+										<div class="form-group">
+											<div class="col-xs-12"><label for="desc-html">Description HTML</label></div>
+											<div class="col-xs-10"><input class="form-control" id="desc-html" onclick="this.select()"></div>
+											<div class="col-xs-2"><button class="btn btn-info"  type="button" id="btn-desc-html">Add</button></div>
+										</div>
+										<div class="form-group">
+											<div class="col-xs-12">
+												<label for="json-data">JSON data</label>
+												<textarea class="form-control" id="json-data" onclick="this.select()"></textarea>
+											</div>
+										</div>
+										<!-- /.form-group -->
+									</fieldset>
+									<!-- /.fieldset -->
+									
+									<!-- /.form -->
+								</div>
+								<div class="card-body tab-pane" id="tab-mapping">
+									map
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
